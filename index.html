@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML5 Canvas粒子效果文字动画特效DEMO演示</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+  <div class="bullet"></div>
+  <div style="position: fixed;opacity: 0.7;text-align: center;filter: brightness(20.5);width: 100%;top:1%">
+    <div style="filter: blur(0.5px);" class="logo">
+      <img src="img/birthday.webp" alt="">
+    </div>
+  </div>
+  <div class="ui">
+    <input class="ui-input" type="text" placeholder="请在此处输入祝福语"/>
+    <span class="ui-return">↵</span>
+  </div>
+  <canvas class="canvas"></canvas>
+  <div class="overlay" style="display: none;">
+    <div class="help" >?</div>
+
+    <div class="ui">
+      <input class="ui-input" type="text" />
+      <span class="ui-return">↵</span>
+    </div>
+    <div class="tabs">
+      <div class="tabs-labels"><span class="tabs-label"></span><span class="tabs-label"></span><span
+          class="tabs-label">Share</span></div>
+      <div class="tabs-panels">
+        <ul class="tabs-panel commands">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/textTransition.js"></script>
+  <script src="js/bullet.js"></script>
+</body>
+
+</html>
